@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(51, 51, 51);
+}
+
+/* header>div {
+    margin-bottom: 10px;
+} */
+
+.middle a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.right button {
+    padding: 10px 20px;
+}
+
+.nav-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .nav-area {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .middle a {
+        margin-right: 10px;
+    }
+}
+
+/* heroSection */
+
+#heroSection {
+    /* margin-bottom: 100px; */
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    text-align: center;
+}
+
+#heroSection img {
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    #heroSection {
+        display: flex;
+    }
+
+    #heroSection .box {
+        width: 50%;
+    }
+
+    #heroSection .box:nth-child(1) {
+        order: 2;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+
+    #heroSection .box:nth-child(2) {
+        order: 1;
+
+
+
+    }
+}
+
+#Elementor {
+    background-color: burlywood;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#Elementor h2,
+#Elementor p {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.demo-img img {
+    width: 100%;
+}
+
+.items {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    #Elementor .container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Elementor {
+        position: relative;
+    }
+
+    .items {
+        display: block;
+    }
+
+    .item img {
+        width: 100%;
+    }
+
+    .item:nth-child(1) {
+        position: absolute;
+        top: 30%;
+        left: 6%;
+    }
+
+    .item:nth-child(2) {
+        position: absolute;
+        top: 45%;
+        right: 0%;
+    }
+}
